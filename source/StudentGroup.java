@@ -65,6 +65,8 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void add(Student student, int index) {
+		if(student== null )throw new IllegalArgumentException("illEGAL VALUE");
+		
 		// Add your implementation here
 	}
 
@@ -80,7 +82,14 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void removeFromIndex(int index) {
-		// Add your implementation here
+		if(index<0 || index>students.length)
+			throw new IllegalArgumentException("illegal value");
+		Student temp[]=new Student[students.length-index];
+		int count=0;
+		for(int i=0;i<students.length;i++)
+		{
+			
+		}// Add your implementation here
 	}
 
 	@Override
