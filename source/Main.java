@@ -40,8 +40,11 @@ public class Main {
 		date1=new SimpleDateFormat("dd/MM/yyyy").parse(birthdate);
 		avgmarks=625;
 		s[2]=new Student(id,fullname,date1,avgmarks);
-		StudentGroup sg=new StudentGroup(n);
-		
+		StudentGroup sg=new StudentGroup(2);
+		for(int i=0;i<2;i++)
+		{
+			sg.getStudents();
+		}
 		
 		
 		

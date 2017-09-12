@@ -1,8 +1,16 @@
 import java.util.Date;
-import java.lang.*;
-import java.util.*;
 
-
+/**
+ * A fix-sized array of students
+ * array length should always be equal to the number of stored elements
+ * after the element was removed the size of the array should be equal to the number of stored elements
+ * after the element was added the size of the array should be equal to the number of stored elements
+ * null elements are not allowed to be stored in the array
+ * 
+ * You may add new methods, fields to this class, but DO NOT RENAME any given class, interface or method
+ * DO NOT PUT any classes into packages
+ *
+ */
 public class StudentGroup implements StudentArrayOperation {
 
 	private Student[] students;
@@ -14,31 +22,34 @@ public class StudentGroup implements StudentArrayOperation {
 	public StudentGroup(int length) {
 		this.students = new Student[length];
 	}
-	
+
 	@Override
-	public Student[] getStudents() throws IllegalArgumentException {
-		if(Students == NULL)
-			throw new IllegalArgumentException("illegal argument");
-		
-			// Add your implementation here
+	public Student[] getStudents() {
+		// Add your implementation here
 		return students;
 	}
 
-	@Override {
-		// Add your implementation here
+	@Override
+	public void setStudents(Student[] students) {
+		this.students=students;
+		
 	}
 
 	@Override
 	public Student getStudent(int index) {
-		if(Students == null)
-			throw new IllegalArgumentException("illegal argument");// Add your implementation here
+		if (index==0 || index>=students.length)
+			throw new IllegalArgumentException("illegal value");
+		// Add your implementation here
 		return students[index];
 	}
 
 	@Override
 	public void setStudent(Student student, int index) {
-		if(index ==0 && index>= Students.length)
-			throw IllegalArgumentException("illegal value");
+		
+		if (index==0 || index>=students.length)
+			throw new IllegalArgumentException("illegal value");
+		students[index]=student;
+		
 		// Add your implementation here
 	}
 
