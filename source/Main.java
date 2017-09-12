@@ -5,7 +5,7 @@ import java.text.*;
 public class Main {
 
 	public static void main(String[] args) throws Exception{
-		/*int id;
+		int id;
 		String fullname;
 		String birthdate;
 		double avgmarks;
@@ -18,7 +18,7 @@ public class Main {
 		Student s[]=new Student[n];
 		
 		
-		for(int i=0;i<n;i++)
+		/*for(int i=0;i<n;i++)
 		{
 		id=sc.nextInt();
 		fullname=sc.next();
@@ -47,6 +47,7 @@ public class Main {
 		}
 		
 		*/
+		StudentGroup sq=new StudentGroup(n);
 		
 		
 		
