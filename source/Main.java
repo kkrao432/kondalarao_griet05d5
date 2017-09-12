@@ -1,4 +1,5 @@
 import java.lang.*;
+import java.util.Scanner;
 import java.util.*;
 import java.text.*;
 public class Main {
@@ -17,7 +18,7 @@ public class Main {
 		Student s[]=new Student[n];
 		
 		
-		for(int i=0;i<n;i++)
+	/*	for(int i=0;i<n;i++)
 		{
 		id=sc.nextInt();
 		fullname=sc.next();
@@ -26,8 +27,24 @@ public class Main {
 		date1=new SimpleDateFormat("dd/MM/yyyy").parse(birthdate);  
 		s[i]=new Student(id,fullname,date1,avgmarks);
 		
-		}
-		StudentGroup sg=new StudentGroup();
+		}*/
+		id=1424;
+		fullname="kondalarao";
+		birthdate="12/12/2012";
+		date1=new SimpleDateFormat("dd/MM/yyyy").parse(birthdate);
+		avgmarks=125;
+		s[1]=new Student(id,fullname,date1,avgmarks);
+		id=1425;
+		fullname="griet";
+		birthdate="12/12/2002";
+		date1=new SimpleDateFormat("dd/MM/yyyy").parse(birthdate);
+		avgmarks=625;
+		s[2]=new Student(id,fullname,date1,avgmarks);
+		StudentGroup sg=new StudentGroup(n);
+		
+		
+		
+		
 		
 		
 		

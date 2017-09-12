@@ -14,26 +14,31 @@ public class StudentGroup implements StudentArrayOperation {
 	public StudentGroup(int length) {
 		this.students = new Student[length];
 	}
-	int  len= length;
+	
 	@Override
-	public Student[] getStudents() {
-		// Add your implementation here
-		return null;
+	public Student[] getStudents() throws IllegalArgumentException {
+		if(Students == NULL)
+			throw new IllegalArgumentException("illegal argument");
+		
+			// Add your implementation here
+		return students;
 	}
 
-	@Override
-	public void setStudents(Student[] students) {
+	@Override {
 		// Add your implementation here
 	}
 
 	@Override
 	public Student getStudent(int index) {
-		// Add your implementation here
-		return null;
+		if(Students == NULL)
+			throw new IllegalArgumentException("illegal argument");// Add your implementation here
+		return students[index];
 	}
 
 	@Override
 	public void setStudent(Student student, int index) {
+		if(index ==0 && index>= Students.length)
+			throw IllegalArgumentException("illegal value");
 		// Add your implementation here
 	}
 
