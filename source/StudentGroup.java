@@ -17,10 +17,7 @@ public class StudentGroup implements StudentArrayOperation {
 	int  len= length;
 	@Override
 	public Student[] getStudents() {
-		for(int i=0;i<len;i++)
-		{
-			System.out.println(this.Student);
-		}// Add your implementation here
+		// Add your implementation here
 		return null;
 	}
 

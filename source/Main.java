@@ -27,14 +27,9 @@ public class Main {
 		s[i]=new Student(id,fullname,date1,avgmarks);
 		
 		}
+		StudentGroup sg=new StudentGroup();
 		
 		
-		
-		
-		/*
-		StudentGroup sc=new StudentGroup();
-		sc.Getstudents();
-		*/
 		
 		//You may test that your code works find here
 		//Please check that your code works and has no 
