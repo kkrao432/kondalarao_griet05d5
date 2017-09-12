@@ -30,7 +30,7 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public Student getStudent(int index) {
-		if(Students == NULL)
+		if(Students == null)
 			throw new IllegalArgumentException("illegal argument");// Add your implementation here
 		return students[index];
 	}
