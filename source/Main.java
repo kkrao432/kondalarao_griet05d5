@@ -5,7 +5,7 @@ import java.text.*;
 public class Main {
 
 	public static void main(String[] args) throws Exception{
-		int id;
+		/*int id;
 		String fullname;
 		String birthdate;
 		double avgmarks;
@@ -18,7 +18,7 @@ public class Main {
 		Student s[]=new Student[n];
 		
 		
-	/*	for(int i=0;i<n;i++)
+		for(int i=0;i<n;i++)
 		{
 		id=sc.nextInt();
 		fullname=sc.next();
@@ -27,7 +27,7 @@ public class Main {
 		date1=new SimpleDateFormat("dd/MM/yyyy").parse(birthdate);  
 		s[i]=new Student(id,fullname,date1,avgmarks);
 		
-		}*/
+		}
 		id=1424;
 		fullname="kondalarao";
 		birthdate="12/12/2012";
@@ -46,7 +46,7 @@ public class Main {
 			sg.getStudents();
 		}
 		
-		
+		*/
 		
 		
 		
